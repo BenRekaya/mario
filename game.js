@@ -39,6 +39,8 @@ loadSprite('blue-steel', 'gqVoI2b.png')
 loadSprite('blue-evil-shroom', 'XXwOSKf.png')
 loadSprite('blue-surprise', 'RMqCc1G.png')
 loadSprite('red-evil-shroom', 'GDmLMla.png')
+loadSprite('white-evil-shroom', '3r66Tq8.png')
+
 
 
 
@@ -81,7 +83,20 @@ scene("game", ({ level, score }) => {
       '                                               -+        ',
       '            w  w     w   w                     ()        ',
       '==============================    =    =   =======',
+    ], 
+    [
+      '£                                       ',
+      '£                                       ',
+      '£                                       ',
+      '£                                       ',
+      '£                                                     x ',
+      '£        @@@@@@              x x       x    x    x',
+      '£                          x x x       x',
+      '£                        x x x x  x                                      -+£',
+      '£               f   f  x x x x x  x                                      ()£',
+      '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                        !     !    !!!!',
     ]
+
   ]
 
   const levelCfg = {
@@ -104,6 +119,8 @@ scene("game", ({ level, score }) => {
     '@': [sprite('blue-surprise'), solid(), scale(0.5), 'coin-surprise'],
     'x': [sprite('blue-steel'), solid(), scale(0.5)],
     'w': [sprite('red-evil-shroom'), solid(), scale(0.5), 'dangerous'],
+    'f': [sprite('white-evil-shroom'), solid(), scale(0.5), 'dangerous'],
+
 
   }
 
